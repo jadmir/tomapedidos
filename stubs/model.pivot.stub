@@ -1,0 +1,43 @@
+<?php
+
+namespace {{ namespace }};
+
+use Exception;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\DB;
+
+class {{ class }}
+{
+  public function __construct()
+  {
+    //
+  }
+
+  public function index(){
+    //
+  }
+
+  public function findByID(){
+    //
+  }
+
+  public function insert(){
+    //
+  }
+
+  public function delete(){
+    //
+  }
+
+  public function vaildateNew(){
+    $rules = [
+
+    ];
+
+    $messages = [
+
+    ];
+
+    return [$rules, $messages];
+  }
+}

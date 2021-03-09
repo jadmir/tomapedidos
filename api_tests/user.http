@@ -1,0 +1,32 @@
+@url=http://laravel-scaffold-v8.test/
+@token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJMYXJhdmVsU2NhZmZvbGQiLCJpZCI6MSwiaWF0IjoxNjAzMzI3MTA5fQ.dLJ_Gg6DokRxKXAQVdbzxkUn7Vw0mFells1uMTP5ZMs
+@path=api/v1/
+
+### Registrar un usuario (sin necesidad de autenticacón)
+POST {{url}}{{path}}users/register
+Content-Type: application/json
+
+{
+  "username": "usuario",
+  "password": "12345678"
+}
+
+### Listar todos los usuarios registrados
+GET {{url}}{{path}}user
+Token: {{token}}
+
+### Crear un usuario
+POST {{url}}{{path}}user
+Content-Type: application/json
+Token: {{token}}
+
+{
+  "username": "usuario2",
+  "password": "12345678",
+  "role": "user"
+}
+
+### Obtener la información un solo usuario por su username
+@id=1
+GET  {{url}}{{path}}user/{{id}}
+Token: {{token}}

@@ -1,0 +1,20 @@
+@url=http://laravel-scaffold-v8.test/
+@token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJMYXJhdmVsU2NhZmZvbGQiLCJpZCI6MSwiaWF0IjoxNjAzMzI3MTA5fQ.dLJ_Gg6DokRxKXAQVdbzxkUn7Vw0mFells1uMTP5ZMs
+@path=api/v1/auth/
+
+### Login de un usuario
+POST {{url}}{{path}}login
+Content-Type: application/json
+
+{
+  "username": "usuario",
+  "password": "12345678"
+}
+
+### Prueba del funcionamiento del token en un HEADER
+GET {{url}}{{path}}test
+Token: {{token}}
+
+### Prueba del funcionamiento del token en un query param
+GET {{url}}{{path}}test
+  ?token={{token}}

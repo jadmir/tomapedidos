@@ -1,0 +1,20 @@
+@url=http://laravel-scaffold-v8.test/
+@token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJMYXJhdmVsU2NhZmZvbGQiLCJpZCI6MSwiaWF0IjoxNjAzMzI3MTA5fQ.dLJ_Gg6DokRxKXAQVdbzxkUn7Vw0mFells1uMTP5ZMs
+### Test
+{{url}}api/test
+
+### Test userID y roles
+{{url}}api/check/1/roles
+Token: {{token}}
+
+### Test userID
+{{url}}api/check/4
+Token: {{token}}
+
+### Test roles
+{{url}}api/check/roles/1
+Token: {{token}}
+
+### Solo token
+{{url}}api/check
+Token: {{token}}
